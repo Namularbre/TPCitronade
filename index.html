@@ -65,14 +65,56 @@
                     
                 </li>
             </ul>
-            <!--End list1-->
+            <!--End List1-->
+            <!--List2-->
+            <ul id="list2">
+                <li>
+                    <img src="img/logo.png" alt="produit1">
+                    <p></p>
+
+                </li>
+                <li>
+                    <img src="img/logo.png" alt="produit2">
+                    <p></p>
+
+                </li>
+                <li>
+                    <img src="img/logo.png" alt="produit3">
+                    
+
+                </li>
+                <li>
+                    <img src="img/logo.png" alt="produit4">
+                    
+                </li>
+            </ul>
+            <!--End List2-->
             <input type="button" value=">" id="Bdroite">
         </div>
         
     </div>
     <!--End container-->
     <!--Script JS-->
-    
+    <script>
+        /*fonction permettant de faire défiler les produits*/
+        /*les listes*/
+        var list1 = document.getElementById('list1');
+        var list2 = document.getElementById('list2');
+        /*une variable pour chaque liste !*/
+        function changement(){
+            
+            if (list1.getAttribute('display').equals("flex")){
+                list2.setAttribute('display','flex');
+                list1.setAttribute('display','none');
+            }
+            else if (list2.getAttribute('display').equals("flex")){
+                list2.setAttribute('display','none');
+                list1.setAttribute('display','flex');
+            }
+            /*on rajoute des tests pour d'autre liste ici !*/
+        }
+
+    </script>
     <!--End Script-->
 </body>
 <footer>

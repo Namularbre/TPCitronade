@@ -159,6 +159,9 @@ body{
 	height: 200px;
 
 }
+#list2{
+	display: none;
+}
 /*end list1*/
 /*button for list1*/
 #Bgauche,#Bdroite{
