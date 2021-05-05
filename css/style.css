@@ -159,11 +159,32 @@ body{
 	height: 200px;
 
 }
+/*end list1*/
+/*list2*/
 #list2{
 	display: none;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 100px;
 }
-/*end list1*/
-/*button for list1*/
+#list2>li{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+#list2>li>img{
+	width: 200px;
+	height: 200px;
+
+}
+
+/*end list 2*/
+/*button for switch the lists*/
 #Bgauche,#Bdroite{
 	background-color: rgb(255, 238, 0);
     box-shadow: 0 8px 8px 0 grey;
@@ -184,3 +205,7 @@ body{
 /*end button for list1*/
 
 /*end productslist*/
+
+/*drinks list*/
+
+/*end drink list*/
