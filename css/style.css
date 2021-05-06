@@ -114,10 +114,17 @@ body{
 body{
 	background-image: url("src/fond.png");
 }
+body>#fond{
+	position: absolute;
+	left: 0px;
+    top: 0px;
+    z-index: -1;
+	width: 100%;
+	height: auto;
+}
 /*container*/
 .container{
 	background-color: #F8F8F4;
-	background-image: url("img/background.png");
 	margin-left: 10%;
 	margin-right: auto;
 	width: 80%;
@@ -285,3 +292,8 @@ body{
 }
 /*end list3*/
 
+/*Form*/
+.containerform{
+	margin: 20px;
+	width: 45%;
+}
