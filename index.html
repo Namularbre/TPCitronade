@@ -6,56 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<!-- Compilé et minimifié JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    
     <title>Citronade</title>
 </head>
 <body>
 
-    <!--Background-->
-    <img id="fond" src="img/background.png">
-    <!--End background-->
-
-        <!--Header-->
-        <div id="header">
-            <div id="logocontainer">
-                <img class="logo" src="img/logoDavids.png" alt="logo">
-            </div>
+    <!--Header-->
+    <div id="header">
+        <div id="logocontainer">
+            <a href="index.html"><img class="logo" src="img/logoDavids.png" alt="logo"></a>
         </div>
-        <!--End Header-->
-        <!--Img attrape regard-->
-        <img id="attrape_regard" src="img/image_obligatoire.jpg" alt="attrape_regard">
-        <!--Fin Img attrape regard-->
+    </div>
+    <!--End Header-->
+    <!--Img attrape regard-->
+    <img id="attrape_regard" src="img/image_obligatoire.jpg" alt="attrape_regard">
+    <!--Fin Img attrape regard-->
 
-        <!--NavBar-->
-        <div id="navbar">
-            <ul>
-                <li class="navbarside">
-                    <a href="#">BOISSON</a>
-                </li>
-                <li>
-                    <a href="#">MENU PRODUIT</a>
-                </li>
-                <li>
-                    <a href="#">LIEUX</a>
-                </li>
-                <li class="navbarside">
-                    <a href="#">CONTACTER</a>
-                </li>
+    <!--NavBar-->
+    <div id="navbar">
+        <ul>
+            <li>
+                <a href="#">NOS PRODUITS</a>
+            </li>
+            <li>
+                <a href="#">NOS BOISSONS</a>
+            </li>
+            <li>
+                <a href="#">EVENEMENTS</a>
+            </li>
+            <li>
+                <a href="#">NOUS CONTACTER</a>
+            </li>
 
-            </ul>
-        </div>
-        <!--end NavBar-->
+        </ul>
+    </div>
+    <!--end NavBar-->
+
+
     <!--Container-->
     <div class="container">
+        <!--ProductList-->
         <div class="productslist">
-            <input type="button" value="<" id="Bgauche">
+            <input type="button" value="<" id="Bgauche" onclick=changementDeListeProduitGauche()>
             <!--List1-->
             <ul id="list1">
                 <li>
                     <img src="img/logo.png" alt="produit1">
+                    <p></p>
+
+                </li>
+                <li>
+                    <img src="img/logo.png" alt="produit2">
+                    <p></p>
+
+                </li>
+                <li>
+                    <img src="img/logo.png" alt="produit3">
+                    
+
+                </li>
+                <li>
+                    <img src="img/logo.png" alt="produit4">
+                    
+                </li>
+            </ul>
+            <!--End List1-->
+            <!--List2-->
+            <ul id="list2" >
+                <li>
+                    <img src="img/logo.png" alt="produit1">
+                    <p></p>
+
+                </li>
+                <li>
+                    <img src="img/logo.png" alt="produit2">
+                    <p></p>
+
+                </li>
+                <li>
+                    <img src="img/logoDavids.png" alt="produit3">
+                    
+
+                </li>
+                <li>
+                    <img src="img/logo.png" alt="produit4">
+                    
+                </li>
+            </ul>
+            <!--End List2-->
+            <input type="button" value=">" id="Bdroite" onclick="changementDeListeProduitDroite()">
+        </div>
+        <!--End ProductList-->
+
+        <!--DrinkList-->
+        <div class="drinklist">
+            <input type="button" value="<" id="Bgauchedrinklist" onclick="changementDeListeBoissonGauche()">
+            <!--drinkList1-->
+            <ul id="drinklist1">
+                <li>
+                    <img src="img/logoDavids.png" alt="produit1">
                     
 
                 </li>
@@ -74,15 +123,9 @@
                     
                 </li>
             </ul>
-            <!--End list1-->
-            <input type="button" value=">" id="Bdroite">
-        </div>
-
-
-        <div class="drinklist">
-            <input type="button" value="<" id="Bgauche">
-            <!--List2-->
-            <ul id="list2">
+            <!--End drinklist1-->
+            <!--Drinklist2-->
+            <ul id="drinklist2">
                 <li>
                     <img src="img/logo.png" alt="produit1">
                     
@@ -103,11 +146,15 @@
                     
                 </li>
             </ul>
-            <!--End list2-->
-            <input type="button" value=">" id="Bdroite">
+            <!--End drink list2-->
+            <input type="button" value=">" id="Bdroitedrinklist" onclick="changementDeListeBoissonDroite()">
         </div>
+        <!--End DrinkList-->
 
+        
 
+        
+        <!--Events-->
         <div class="event">
 
             <div id="eventtitle">
@@ -119,8 +166,8 @@
             </div>
 
             <div class="eventlist">
-                <!--List3-->
-                <ul id="list3">
+                <!--EventList-->
+                <ul id="eventlist">
                     <li>
                         <img src="img/logo.png" alt="produit1">
                         <p>évenement numéro 1</p>
@@ -200,8 +247,9 @@
                 <!--End list2-->
             </div>
         </div>
+        <!--End Events-->
 
-
+        <!--Form-->
         <div class="containerform">
             <!--<div class="row">-->
             <div class="col s12 m6">
@@ -210,69 +258,142 @@
                   <span class="card-title">Inscription</span>
                   
                   <form action="#" method="post">
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">account_circle</i>
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="user_name">
-                </div>
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">account_circle</i>
-                    <label for="first-name">Prénom :</label>
-                    <input type="text" id="name" name="user_first-name">
-                </div>
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">account_circle</i>
-                    <label for="mail">e-mail :</label>
-                    <input type="email" id="mail" name="user_mail">
-                </div>
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">account_circle</i>
-                    <label for="phone">Téléphone :</label>
-                    <input type="email" id="mail" name="user_mail">
-                </div>
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">account_circle</i>
-                        <select name="listofevents" id="listofevents">
-                            <option value="">Événements</option>
-                            <option value="eventnb1">Événement 1</option>
-                            <option value="eventnb2">Événement 2</option>
-                            <option value="eventnb3">Événement 3</option>
-                            <option value="eventnb4">Événement 4</option>
-                            <option value="eventnb5">Événement 5</option>
-                            <option value="eventnb6">Événement 6</option>
-                            <option value="eventnb7">Événement 7</option>
-                            <option value="eventnb8">Événement 8</option>
-                            <option value="eventnb9">Événement 9</option>
-                            <option value="eventnb10">Événement 10</option>
-                            <option value="eventnb11">Événement 11</option>
-                            <option value="eventnb12">Événement 12</option>
-                            <option value="eventnb13">Événement 13</option>
-                            <option value="eventnb14">Événement 14</option>
-                            <option value="eventnb15">Événement 15</option>
-                        </select>
-                    <label for="msg">Message :</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </div>
-                <div class="button">
-                    <a class="waves-effect waves-light btn"><i class="material-icons right" class=" z-depth-5" type="submit">send</i>Envoyer votre message</a>
-                    
-                </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <label for="first-name">Prénom :</label>
+                        <input type="text" id="name" name="user_first-name">
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <label for="mail">e-mail :</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <label for="phone">Téléphone :</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                            <select name="listofevents" id="listofevents">
+                                <option value="">Événements</option>
+                                <option value="eventnb1">Événement 1</option>
+                                <option value="eventnb2">Événement 2</option>
+                                <option value="eventnb3">Événement 3</option>
+                                <option value="eventnb4">Événement 4</option>
+                                <option value="eventnb5">Événement 5</option>
+                                <option value="eventnb6">Événement 6</option>
+                                <option value="eventnb7">Événement 7</option>
+                                <option value="eventnb8">Événement 8</option>
+                                <option value="eventnb9">Événement 9</option>
+                                <option value="eventnb10">Événement 10</option>
+                                <option value="eventnb11">Événement 11</option>
+                                <option value="eventnb12">Événement 12</option>
+                                <option value="eventnb13">Événement 13</option>
+                                <option value="eventnb14">Événement 14</option>
+                                <option value="eventnb15">Événement 15</option>
+                            </select>
+                        <label for="msg">Message :</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+                    <div class="button">
+                        <a class="waves-effect waves-light btn"><i class="material-icons right" class=" z-depth-5" type="submit">send</i>Envoyer votre message</a>
+                    </div>
                 
-            </form>
+                    </form>
                 </div>
-              </div>
             </div>
-         <!-- </div>-->
-            
-            </div>
-        
+        </div>
+        <!--End Form-->
+
         
     </div>
     <!--End container-->
     <!--Script JS-->
+    <script>
+        /*fonction permettant de faire défiler les produits*/
+        /*les listes*/
+        var list1 = document.getElementById("list1");
+        var list2 = document.getElementById("list2");
+        /*une variable pour chaque liste !*/
+        /*index des listes*/
+        var indexList = 1;
+        function changementDeListeProduitGauche(){
+            
+            if (indexList == 1){
+                list1.style.display = "none";
+                list2.style.display = "flex";
+                indexList = 2;
+            }
+            else if (indexList == 2){
+                list2.style.display = "none";
+                list1.style.display = "flex";
+                indexList = 1;
+            }
+            
+            /*on rajoute des tests pour d'autre liste ici !*/
+        }
+
+        function changementDeListeProduitDroite(){
+            if(indexList == 2){
+                list2.style.display = "none";
+                list1.style.display = "flex";
+                indexList = 1;
+            }
+            else if(indexList == 1){
+                list1.style.display = "none";
+                list2.style.display = "flex";
+                indexList = 2;
+            }
+        }
+
+        
+        /*variable contenant les div des drinklistx*/
+        var drinklist1 = document.getElementById("drinklist1");
+        var drinklist2 = document.getElementById("drinklist2");
+
+        var indexDrinkList = 1;
+        /*fonction pour la liste de boisson*/
+        function changementDeListeBoissonGauche(){
+            if(indexDrinkList == 1){
+                drinklist1.style.display = "none";
+                drinklist2.style.display = "flex";
+                indexDrinkList = 2;
+            }
+            else if(indexDrinkList == 2){
+                drinklist2.style.display = "none";
+                drinklist1.style.display = "flex";
+                indexDrinkList = 1;
+            }
+        }
+
+        function changementDeListeBoissonDroite(){
+            if(indexDrinkList == 2){
+                drinklist2.style.display = "none";
+                drinklist1.style.display = "flex";
+                indexDrinkList = 1;
+            }
+            else if(indexDrinkList == 1){
+                drinklist1.style.display = "none";
+                drinklist2.style.display = "flex";
+                indexDrinkList = 2;
+            }
+        }
+        
+
+
+
+
+
+    </script>
     <!--End Script-->
 </body>
 <footer>
-    
+    <p>Travail réallisé par Evan TOUZET, Eric Junior EGEA et Thomas SAZERAT</p>
 </footer>
 </html>
