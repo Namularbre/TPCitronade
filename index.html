@@ -42,7 +42,7 @@
     <!--Container-->
     <div class="container">
         <div class="productslist">
-            <input type="button" value="<" id="Bgauche">
+            <input type="button" value="<" id="Bgauche" onclick=changementDeListeProduitGauche()>
             <!--List1-->
             <ul id="list1">
                 <li>
@@ -67,7 +67,7 @@
             </ul>
             <!--End List1-->
             <!--List2-->
-            <ul id="list2">
+            <ul id="list2" >
                 <li>
                     <img src="img/logo.png" alt="produit1">
                     <p></p>
@@ -79,7 +79,7 @@
 
                 </li>
                 <li>
-                    <img src="img/logo.png" alt="produit3">
+                    <img src="img/logoDavids.png" alt="produit3">
                     
 
                 </li>
@@ -89,7 +89,7 @@
                 </li>
             </ul>
             <!--End List2-->
-            <input type="button" value=">" id="Bdroite">
+            <input type="button" value=">" id="Bdroite" onclick="changementDeListeProduitDroite()">
         </div>
         
     </div>
@@ -98,21 +98,42 @@
     <script>
         /*fonction permettant de faire défiler les produits*/
         /*les listes*/
-        var list1 = document.getElementById('list1');
-        var list2 = document.getElementById('list2');
+        var list1 = document.getElementById("list1");
+        var list2 = document.getElementById("list2");
         /*une variable pour chaque liste !*/
-        function changement(){
+        /*index des listes*/
+        var indexList = 1;
+        function changementDeListeProduitGauche(){
             
-            if (list1.getAttribute('display').equals("flex")){
-                list2.setAttribute('display','flex');
-                list1.setAttribute('display','none');
+            if (indexList == 1){
+                
+                list1.style.display = "none";
+                list2.style.display = "flex";
+                indexList = 2;
             }
-            else if (list2.getAttribute('display').equals("flex")){
-                list2.setAttribute('display','none');
-                list1.setAttribute('display','flex');
+            else if (indexList == 2){
+                
+                list2.style.display = "none";
+                list1.style.display = "flex";
+                indexList = 1;
             }
+            
             /*on rajoute des tests pour d'autre liste ici !*/
         }
+
+        function changementDeListeProduitDroite(){
+            if(indexList == 2){
+                list2.style.display = "none";
+                list1.style.display = "flex";
+                indexList = 1;
+            }
+            else if(indexList == 1){
+                list1.style.display = "none";
+                list2.style.display = "flex";
+                indexList = 2;
+            }
+        }
+
 
     </script>
     <!--End Script-->
