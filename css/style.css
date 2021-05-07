@@ -104,12 +104,13 @@ body{
 	align-items: center;
 	justify-content: space-around;
 	min-width: 25%;
+
 }
 #navbar>ul>li>a{
 	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
-	font-family: sans-serif;
+	font-family: Playfair;
 	
 }
 
@@ -131,6 +132,26 @@ body{
 	background-color: #F8F8F4;
 }
 /*end container*/
+
+
+.logolist{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 15px;
+	margin-top: 0px;
+	padding-top: 15px;
+}
+
+.logolist>img{
+	height: 65px;
+	width: 40px;
+}
+
+.logolist>#logolistproduits{
+	height: 55px;
+	width: 65px;
+}
 
 /*productslist*/
 .productslist{

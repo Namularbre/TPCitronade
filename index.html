@@ -46,27 +46,30 @@
     <!--Container-->
     <div class="container">
         <!--ProductList-->
+        <div class="logolist">
+            <img src="img/logococktail.png" alt="logoboissons">
+        </div>
         <div class="productslist">
             <input type="button" value="<" id="Bgauche" onclick=changementDeListeProduitGauche()>
             <!--List1-->
             <ul id="list1">
                 <li>
-                    <img src="img/logo.png" alt="produit1">
+                    <img src="img/boisson1.jpg" alt="produit1">
                     <p></p>
 
                 </li>
                 <li>
-                    <img src="img/logo.png" alt="produit2">
+                    <img src="img/boisson2.jpg" alt="produit2">
                     <p></p>
 
                 </li>
                 <li>
-                    <img src="img/logo.png" alt="produit3">
+                    <img src="img/boisson3.jpg" alt="produit3">
                     
 
                 </li>
                 <li>
-                    <img src="img/logo.png" alt="produit4">
+                    <img src="img/boisson4.jpg" alt="produit4">
                     
                 </li>
             </ul>
@@ -74,22 +77,22 @@
             <!--List2-->
             <ul id="list2" >
                 <li>
-                    <img src="img/logo.png" alt="produit1">
+                    <img src="img/boisson5.jpg" alt="produit1">
                     <p></p>
 
                 </li>
                 <li>
-                    <img src="img/logo.png" alt="produit2">
+                    <img src="img/boisson6.jpg" alt="produit2">
                     <p></p>
 
                 </li>
                 <li>
-                    <img src="img/logoDavids.png" alt="produit3">
+                    <img src="img/boisson7.jpg" alt="produit3">
                     
 
                 </li>
                 <li>
-                    <img src="img/logo.png" alt="produit4">
+                    <img src="img/boisson8.jpg" alt="produit4">
                     
                 </li>
             </ul>
@@ -99,6 +102,9 @@
         <!--End ProductList-->
 
         <!--DrinkList-->
+        <div class="logolist">
+            <img id="logolistproduits" src="img/logoorange.png" alt="logoboissons">
+        </div>
         <div class="drinklist">
             <input type="button" value="<" id="Bgauchedrinklist" onclick="changementDeListeBoissonGauche()">
             <!--drinkList1-->
@@ -279,7 +285,6 @@
                         <input type="email" id="mail" name="user_mail">
                     </div>
                     <div class="input-field col s6">
-                        <i class="material-icons prefix">account_circle</i>
                             <select name="listofevents" id="listofevents">
                                 <option value="">Événements</option>
                                 <option value="eventnb1">Événement 1</option>
@@ -298,12 +303,15 @@
                                 <option value="eventnb14">Événement 14</option>
                                 <option value="eventnb15">Événement 15</option>
                             </select>
-                        <label for="msg">Message :</label>
-                        <textarea id="msg" name="user_message"></textarea>
                     </div>
                     <div class="button">
                         <a class="waves-effect waves-light btn"><i class="material-icons right" class=" z-depth-5" type="submit">send</i>Envoyer votre message</a>
                     </div>
+
+                    <label class="pure-material-checkbox">
+                        <input type="checkbox">
+                        <span>Souhaitez vous recevoir plus d'informations sur nos évènements ?</span>
+                      </label>
                 
                     </form>
                 </div>
