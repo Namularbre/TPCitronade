@@ -209,3 +209,141 @@ body{
 /*drinks list*/
 
 /*end drink list*/
+
+/*drink list*/
+/*buttons for drinklist*/
+#Bgauchedrinklist,#Bdroitedrinklist{
+	background-color: rgb(255, 238, 0);
+    box-shadow: 0 8px 8px 0 grey;
+    border-radius: 35px;
+    border: 0px;
+    color: white;
+    height: 40px;
+	width: 40px;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#Bgauchedrinklist:hover,#Bdroitedrinklist:hover{
+	box-shadow: 0 4px 4px 0 grey;
+}
+
+/*end buttons for drinklist*/
+
+
+.drinklist{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	min-height: 100px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	border-bottom: 1px solid;
+
+}
+/*drink list1*/
+#drinklist1{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 100px;
+	
+}
+#drinklist1>li{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px;
+}
+#drinklist1>li>img{
+	width: 200px;
+	height: 200px;
+
+}
+/*drink list1*/
+/*end drink list*/
+
+
+
+/*event*/
+.event{
+	display: flex;
+	flex-direction: row;
+}
+
+#eventtitle{
+	margin-top: 20px;
+	margin-left: 38%;
+	position: absolute;
+}
+/*end event*/
+
+/*map*/
+.event>.map{
+	height: 400px;
+	width: 400px;
+	border: 1px solid;
+	margin: 50px;
+	margin-top: 100px;
+}
+/*end map*/
+
+/*eventlist*/
+.event>.eventlist{
+	display: flex;
+	align-items:flex-start;
+	flex-direction: column;
+	min-height: 100px;
+	height: 500px;
+	width: 400px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	border: 1px solid;
+	margin: 15px;
+	margin-top: 100px;
+	margin-left: 20%;
+	overflow: auto;
+
+}
+
+/*event list*/
+#eventlist{
+	display: block;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	min-height: 100px;
+	
+}
+#eventlist>li{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px;
+	
+}
+#eventlist>li>img{
+	width: 70px;
+	height: 70px;
+
+}
+/*end eventlist*/
+
+/*Form*/
+.containerform{
+	margin: 20px;
+	width: 45%;
+}
+
+
+
+/*end eventlist*/
+

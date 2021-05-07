@@ -96,11 +96,11 @@
 
         <!--DrinkList-->
         <div class="drinklist">
-            <input type="button" value="<" id="Bgauche">
+            <input type="button" value="<" id="Bgauchedrinklist" onclick="">
             <!--drinkList1-->
             <ul id="drinklist1">
                 <li>
-                    <img src="img/logo.png" alt="produit1">
+                    <img src="img/logoDavids.png" alt="produit1">
                     
 
                 </li>
@@ -120,9 +120,12 @@
                 </li>
             </ul>
             <!--End drinklist2-->
-            <input type="button" value=">" id="Bdroite">
+            <input type="button" value=">" id="Bdroitedrinklist" onclick="">
         </div>
         <!--End DrinkList-->
+
+        
+
         
         <!--Events-->
         <div class="event">
@@ -136,7 +139,7 @@
             </div>
 
             <div class="eventlist">
-                <!--List3-->
+                <!--EventList-->
                 <ul id="eventlist">
                     <li>
                         <img src="img/logo.png" alt="produit1">
@@ -323,6 +326,39 @@
                 indexList = 2;
             }
         }
+
+        
+        /*variable contenant les div des drinklistx*/
+        var drinklist1 = document.getElementById("drinklist1");
+        var drinklist2 = document.getElementById("drinklist2");
+
+        var indexDrinkList = 1;
+        /*fonction pour la liste de boisson*/
+        function changementDeListeBoissonGauche(){
+            if(indexDrinkList == 1){
+                drinklist1.style.display = "none";
+                drinklist2.style.display = "flex";
+            }
+            else if(indexDrinkList == 2){
+                drinklist2.style.display = "none";
+                drinklist1.style.display = "flex";
+            }
+        }
+
+        function changementDeListeBoissonDroite(){
+            if(indexDrinkList == 2){
+                drinklist2.style.display = "none";
+                drinklist1.style.display = "flex";
+            }
+            else if(indexDrinkList == 1){
+                drinklist1.style.display = "none";
+                drinklist2.style.display = "flex";
+            }
+        }
+        
+
+
+
 
 
     </script>
