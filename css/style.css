@@ -195,14 +195,15 @@ body{
 #Bgauche,#Bdroite{
 	background-color: rgb(255, 238, 0);
     box-shadow: 0 8px 8px 0 grey;
-    border-radius: 35px;
+    border-radius: 50%;
     border: 0px;
-    color: white;
+	color: white;
     height: 40px;
 	width: 40px;
     padding: 10px;
     cursor: pointer;
     overflow: hidden;
+	font-size: 14px;
 	
 }
 #Bgauche:hover,#Bdroite:hover{
@@ -222,14 +223,15 @@ body{
 #Bgauchedrinklist,#Bdroitedrinklist{
 	background-color: rgb(255, 238, 0);
     box-shadow: 0 8px 8px 0 grey;
-    border-radius: 35px;
+    border-radius: 50%;
     border: 0px;
-    color: white;
+	color: white;
     height: 40px;
 	width: 40px;
     padding: 10px;
     cursor: pointer;
     overflow: hidden;
+	font-size: 14px;
 }
 
 #Bgauchedrinklist:hover,#Bdroitedrinklist:hover{
@@ -378,3 +380,9 @@ body{
 
 /*end eventlist*/
 
+/*footer*/
+footer{
+	background-color: rgb(163, 158, 114);
+	min-height: 500px;
+}
+/*end footer*/
