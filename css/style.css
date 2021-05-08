@@ -416,17 +416,19 @@ body{
 
 /*pied de page*/
 #infos{
+	display: flex;
 	background-color: black;
 	width: 100%;
-	height: 200px;
+	height: 230px;
+	flex-direction: row;
+	padding-left: 10px;
 }
 
 #infos>ul{
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: left;
 	flex-direction: column;
-	border-collapse:separate;
 	
 }
 #infos>ul>li{
@@ -441,5 +443,41 @@ body{
 	text-decoration: none;
 	font-family: Playfair;
 	
+}
+#infos>a{
+	color: #fff;
+	text-decoration: none;
+	font-family: Playfair;
+	margin-top: 30px;
+	margin-left: 20%;
+	margin-right: 20%;
+	
+}
+
+#infos>#networks>p{
+	color: #fff;
+	text-decoration: none;
+	font-family: Playfair;
+}
+
+#infos>#networks>li{
+	display: flex;
+	flex-direction: row;
+}
+
+#infos>#networks>li>p{
+	color: #fff;
+	text-decoration: none;
+	font-family: Playfair;
+}
+
+#infos>#networks>li>a>img{
+	width: 30px;
+	height: 30px;
+}
+
+#infos>#networks>li>p{
+	margin-top: 7px;
+	margin-left: 5px;
 }
 
