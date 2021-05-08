@@ -376,19 +376,24 @@ body{
 .containerform{
 	margin: 20px;
 	width: 45%;
+	padding: 10;
 	background-color: rgb(226, 226, 124);
 	display: flex;
 	justify-content: center;
 }
 
-.card-title{
+.titreformulaire{
 	display: flex;
 	justify-content: center;
 	
 }
 
-.account{
+.nom{
 	
+}
+
+.prenom{
+
 }
 
 #Binscription{
