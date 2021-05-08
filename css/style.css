@@ -372,76 +372,7 @@ body{
 }
 /*end eventlist*/
 
-/*Form*/
-.containerform{
-	margin: 20px;
-	width: 45%;
-	padding: 10px;
-	background-color: rgb(226, 226, 124);
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-}
 
-.titreformulaire{
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-}
-
-.nom{
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-}
-
-.prenom{
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-}
-
-.mail{
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-}
-
-.telephone{
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-}
-
-.listeevenment{
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-}
-
-#Binscription{
-	background-color: rgb(255, 238, 0);
-    box-shadow: 0 8px 8px 0 grey;
-    border-radius: 5%;
-    border: 0px;
-	color: white;
-    height: 40px;
-	width: 150px;
-    padding: 10px;
-    cursor: pointer;
-    overflow: hidden;
-	font-size: 14px;
-	display: flex;
-	justify-content: center;
-}
-
-#Binscription:hover{
-	box-shadow: 0 4px 4px 0 grey;
-}
-
-
-
-/*end eventlist*/
 
 /*footer*/
 footer{
