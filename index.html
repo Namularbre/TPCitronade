@@ -264,27 +264,29 @@
                   <span class="card-title">Inscription</span>
                   
                   <form action="#" method="post">
-                    <div class="input-field col s6">
+                    <div id="nomprenom">
+                    <div class="insideform">
                         <i class="material-icons prefix">account_circle</i>
                         <label for="name">Nom :</label>
                         <input type="text" id="name" name="user_name">
                     </div>
-                    <div class="input-field col s6">
+                    <div class="insideform">
                         <i class="material-icons prefix">account_circle</i>
                         <label for="first-name">Prénom :</label>
                         <input type="text" id="name" name="user_first-name">
                     </div>
-                    <div class="input-field col s6">
+                </div>
+                    <div class="insideform">
                         <i class="material-icons prefix">account_circle</i>
                         <label for="mail">e-mail :</label>
                         <input type="email" id="mail" name="user_mail">
                     </div>
-                    <div class="input-field col s6">
+                    <div class="insideform">
                         <i class="material-icons prefix">account_circle</i>
                         <label for="phone">Téléphone :</label>
                         <input type="email" id="mail" name="user_mail">
                     </div>
-                    <div class="input-field col s6">
+                    <div class="insideform">
                             <select name="listofevents" id="listofevents">
                                 <option value="">Événements</option>
                                 <option value="eventnb1">Événement 1</option>
@@ -304,11 +306,11 @@
                                 <option value="eventnb15">Événement 15</option>
                             </select>
                     </div>
-                    <div class="button">
+                    <div class="insideform">
                         <a class="waves-effect waves-light btn"><i class="material-icons right" class=" z-depth-5" type="submit">send</i>Envoyer votre message</a>
                     </div>
 
-                    <label class="pure-material-checkbox">
+                    <label class="insideform">
                         <input type="checkbox">
                         <span>Souhaitez vous recevoir plus d'informations sur nos évènements ?</span>
                       </label>
@@ -403,5 +405,24 @@
 </body>
 <footer>
     <p>Travail réallisé par Evan TOUZET, Eric Junior EGEA et Thomas SAZERAT</p>
+    <div id="infos">
+        <ul>
+            <li>
+                <a href="#">Politique de confidentialité</a>
+            </li>
+            <li>
+                <a href="#">Politique d'utilisation des cookies</a>
+            </li>
+            <li>
+                <a href="#">Conditions d'utilisation</a>
+            </li>
+            <li>
+                <a href="#">Nous contacter</a>
+            </li>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+        </ul>
+    </div>
 </footer>
 </html>

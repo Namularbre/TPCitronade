@@ -392,10 +392,54 @@ body{
 /*Form*/
 .containerform{
 	margin: 20px;
+	padding: 15px;
 	width: 45%;
+	height: 240px;
+	border: 1px solid;
 }
 
+#nomprenom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 
+#listofevents{
+	margin: 10px;
+}
+
+.insideform{
+	margin-top: 10px;
+}
 
 /*end eventlist*/
+
+/*pied de page*/
+#infos{
+	background-color: black;
+	width: 100%;
+	height: 200px;
+}
+
+#infos>ul{
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	flex-direction: column;
+	border-collapse:separate;
+	
+}
+#infos>ul>li{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	flex-direction: column;
+
+}
+#infos>ul>li>a{
+	color: #fff;
+	text-decoration: none;
+	font-family: Playfair;
+	
+}
 
