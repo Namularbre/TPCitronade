@@ -118,6 +118,11 @@ body{
 	
 }
 
+#navbartel{
+	display: none;
+}
+
+
 /*fin navbar 2*/
 body{
 	background-image: url("src/fond.png");
@@ -192,6 +197,13 @@ body{
 
 }
 
+@media all and (max-width){
+	#list1>li>img,#list2>li>img{
+		width: 150px;
+		height: 150px;
+	}
+}
+
 /*end list 2*/
 /*button for switch the lists*/
 #Bgauche,#Bdroite{
@@ -206,7 +218,8 @@ body{
     cursor: pointer;
     overflow: hidden;
 	font-size: 14px;
-	
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 #Bgauche:hover,#Bdroite:hover{
 	box-shadow: 0 4px 4px 0 grey;
@@ -234,6 +247,8 @@ body{
     cursor: pointer;
     overflow: hidden;
 	font-size: 14px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 #Bgauchedrinklist:hover,#Bdroitedrinklist:hover{
@@ -276,6 +291,12 @@ body{
 	height: 200px;
 
 }
+@media all and (max-width){
+	#drinklist1>li>img,#drinklist2>li>img{
+		width: 150px;
+		height: 150px;
+	}
+}
 /*drink list1*/
 /*drink list 2*/
 #drinklist2{
@@ -311,11 +332,45 @@ body{
 	flex-direction: row;
 }
 
+@media all and (max-width: 720px){
+	.event{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	#eventtitle{
+		margin-top: 20px;
+		position: absolute;
+	}
+	.event>map{
+		display: flex;
+		justify-content: center;
+		border: 1px solid;
+		margin-top: 100px;
+	}
+
+	.event>.eventlist{
+		display: flex;
+		align-items:flex-start;
+		flex-direction: column;
+		min-height: 100px;
+		height: 500px;
+		width: 50px;
+		flex-wrap: wrap;
+		justify-content: center;
+		border: 1px solid;
+		margin-top: 100px;
+		overflow: auto;
+	}
+}
+
 #eventtitle{
 	margin-top: 20px;
 	margin-left: 38%;
 	position: absolute;
 }
+
 /*end event*/
 
 /*map*/
