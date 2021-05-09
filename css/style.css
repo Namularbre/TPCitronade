@@ -322,7 +322,7 @@ body{
 	flex-flow: column;
 }
 @media all and (max-width: 720px){
-	#drinklist1>li>div>img,#drinklist2>li>div>img{
+	#drinklist1>li>img,#drinklist2>li>img{
 		width: 150px;
 		height: 150px;
 	}
