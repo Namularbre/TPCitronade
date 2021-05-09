@@ -383,10 +383,6 @@
 
         }
 
-
-
-
-
         /*fonction permettant de faire défiler les produits*/
         /*les listes*/
         var list1 = document.getElementById("list1");
@@ -401,13 +397,13 @@
                 list2.style.display = "flex";
                 indexList = 2;
             }
-            else if (indexList == 2){
+            else{
                 list2.style.display = "none";
                 list1.style.display = "flex";
                 indexList = 1;
             }
             
-            /*on rajoute des tests pour d'autre liste ici !*/
+            
         }
 
         function changementDeListeProduitDroite(){
@@ -416,7 +412,7 @@
                 list1.style.display = "flex";
                 indexList = 1;
             }
-            else if(indexList == 1){
+            else{
                 list1.style.display = "none";
                 list2.style.display = "flex";
                 indexList = 2;
@@ -436,7 +432,7 @@
                 drinklist2.style.display = "flex";
                 indexDrinkList = 2;
             }
-            else if(indexDrinkList == 2){
+            else{
                 drinklist2.style.display = "none";
                 drinklist1.style.display = "flex";
                 indexDrinkList = 1;
@@ -449,7 +445,7 @@
                 drinklist1.style.display = "flex";
                 indexDrinkList = 1;
             }
-            else if(indexDrinkList == 1){
+            else{
                 drinklist1.style.display = "none";
                 drinklist2.style.display = "flex";
                 indexDrinkList = 2;
