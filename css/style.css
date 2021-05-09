@@ -434,10 +434,6 @@ body{
 
 
 /*footer*/
-footer{
-	background-color: rgb(163, 158, 114);
-	min-height: 500px;
-}
 
 #infos{
 	display: flex;
