@@ -338,34 +338,44 @@ body{
 }
 
 @media all and (max-width: 720px){
-	.event{
-		display: flex;
-		flex-direction: column;
-	}
-
-	#eventtitle{
-		margin-top: 20px;
-		position: absolute;
-	}
-	.event>map{
-		display: flex;
-		justify-content: center;
-		border: 1px solid;
-		margin-top: 100px;
-	}
-
-	.event>.eventlist{
+	.eventlist{
 		display: flex;
 		align-items:flex-start;
 		flex-direction: column;
 		min-height: 100px;
 		height: 500px;
-		width: 50px;
+		width: 400px;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-evenly;
 		border: 1px solid;
+		margin: 15px;
 		margin-top: 100px;
+		margin-left: 0%;
 		overflow: auto;
+	
+	}
+	#eventlist{
+		display: block;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		min-height: 100px;
+		
+	}
+	#eventlist>li{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		padding: 10px;
+		
+	}
+	#eventlist>li>img{
+		width: 30px;
+		height: 30px;
+	
 	}
 }
 
