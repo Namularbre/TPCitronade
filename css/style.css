@@ -357,8 +357,8 @@ body{
 	
 	}
 	#eventlist{
-		display: block;
-		justify-content: center;
+		display: flex;
+		justify-content: flex-start;
 		align-items: center;
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -378,6 +378,13 @@ body{
 		width: 30px;
 		height: 30px;
 	
+	}
+
+	.event>.map{
+		height: 100px;
+		width: 100px;
+		border: 1px solid;
+		margin-top: 100px;
 	}
 }
 
