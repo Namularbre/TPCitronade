@@ -466,6 +466,15 @@ body{
 }
 /*end eventlist*/
 
+/*form*/
+form>label{
+	display: flex;
+	justify-content: center;
+	color: black;
+	font-weight: 35px;
+}
+/*end form*/
+
 
 
 /*footer*/
