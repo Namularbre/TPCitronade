@@ -453,11 +453,15 @@ body{
 		width: 250px;
 	}
 	.event>.map{
-		height: 250px;
-		width: 250px;
+		height: 300px;
+		width: 300px;
 		border: 1px solid;
 		margin-top: 100px;
 		margin-bottom: 100px;
+	}
+	.event>.map>iframe{	
+		height: 300px;
+		width: 300px;
 	}
 }
 /*end eventlist*/
