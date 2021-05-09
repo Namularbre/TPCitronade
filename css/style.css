@@ -291,6 +291,10 @@ body{
 	height: 200px;
 
 }
+#drinklist1>li>p{
+	display: flex;
+	flex-flow: column;
+}
 @media all and (max-width){
 	#drinklist1>li>img,#drinklist2>li>img{
 		width: 150px;
