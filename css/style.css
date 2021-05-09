@@ -168,7 +168,7 @@ body{
 	flex-wrap: wrap;
 	padding: 10px;
 }
-#list1>li>img{
+#list1>li>div>img{
 	width: 200px;
 	height: 200px;
 
@@ -191,7 +191,7 @@ body{
 	flex-wrap: wrap;
 	padding: 10px;
 }
-#list2>li>img{
+#list2>li>div>img{
 	width: 200px;
 	height: 200px;
 
