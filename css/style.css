@@ -286,7 +286,7 @@ body{
 	align-items: center;
 	padding: 10px;
 }
-#drinklist1>li>img{
+#drinklist1>li>div>img{
 	width: 200px;
 	height: 200px;
 
@@ -296,7 +296,7 @@ body{
 	flex-flow: column;
 }
 @media all and (max-width){
-	#drinklist1>li>img,#drinklist2>li>img{
+	#drinklist1>li>div>img,#drinklist2>li>div>img{
 		width: 150px;
 		height: 150px;
 	}
@@ -320,7 +320,7 @@ body{
 	align-items: center;
 	padding: 10px;
 }
-#drinklist2>li>img{
+#drinklist2>li>div>img{
 	width: 200px;
 	height: 200px;
 
