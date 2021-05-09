@@ -338,25 +338,27 @@ body{
 }
 
 @media all and (max-width: 720px){
+	.event{
+		display: flex;
+		flex-direction: column;
+	}
 	.eventlist{
 		display: flex;
-		align-items:flex-start;
+		align-items: flex-start;
 		flex-direction: column;
 		min-height: 100px;
 		height: 500px;
-		width: 400px;
+		width: 300px;
 		flex-wrap: wrap;
-		justify-content: space-evenly;
+		justify-content: flex-start;
 		border: 1px solid;
-		margin: 15px;
 		margin-top: 100px;
-		margin-left: 0%;
-		overflow: auto;
+
 	
 	}
 	#eventlist{
 		display: block;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 		flex-wrap: wrap;
