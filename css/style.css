@@ -223,7 +223,7 @@ body{
 
 }
 
-@media all and (max-width){
+@media all and (max-width: 720px){
 	#list1>li>img,#list2>li>img{
 		width: 150px;
 		height: 150px;
@@ -321,7 +321,7 @@ body{
 	display: flex;
 	flex-flow: column;
 }
-@media all and (max-width){
+@media all and (max-width: 720px){
 	#drinklist1>li>div>img,#drinklist2>li>div>img{
 		width: 150px;
 		height: 150px;
@@ -494,7 +494,7 @@ body{
 #infos>ul{
 	display: flex;
 	justify-content: space-evenly;
-	align-items: left;
+	align-items: flex-start;
 	flex-direction: column;
 	
 }
