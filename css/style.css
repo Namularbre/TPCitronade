@@ -430,50 +430,34 @@ body{
 	.event{
 		display: flex;
 		flex-direction: column;
+		
 	}
-	.eventlist{
+	.event>.eventlist{
 		display: flex;
-		align-items: flex-start;
+		align-items:flex-start;
 		flex-direction: column;
 		min-height: 100px;
 		height: 500px;
-		width: 300px;
+		width: 250px;
 		flex-wrap: wrap;
-		justify-content: flex-start;
+		justify-content: space-evenly;
 		border: 1px solid;
 		margin-top: 100px;
-
+		overflow: auto;
 	
-	}
-	#eventlist{
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		flex-direction: column;
-		flex-wrap: wrap;
-		min-height: 100px;
-		
 	}
 	#eventlist>li{
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;
-		flex-direction: row;
-		align-items: center;
-		padding: 10px;
-		
+		flex-flow: wrap row;
+		width: 250px;
 	}
-	#eventlist>li>img{
-		width: 30px;
-		height: 30px;
-	
-	}
-
 	.event>.map{
-		height: 100px;
-		width: 100px;
+		height: 250px;
+		width: 250px;
 		border: 1px solid;
 		margin-top: 100px;
+		margin-bottom: 100px;
 	}
 }
 /*end eventlist*/
