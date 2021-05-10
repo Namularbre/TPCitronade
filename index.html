@@ -230,78 +230,78 @@
                 <!--EventList-->
                 <ul id="eventlist">
                     <li>
-                        <img src="img/logo.png" alt="produit1">
-                        <p onclick="afficherEvenement()">évenement numéro 1</p>
+                        <img src="img/Imagesdesevents/event1.png" alt="AMAP les Grand'Goules">
+                        <p onclick="afficherEvenement(1)">AMAP les Grand'Goules</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit2">
-                        <p>évenement numéro 2</p>
+                        <img src="img/Imagesdesevents/event2.png" alt="AMAP Bio des 2 rives">
+                        <p onclick="afficherEvenement(2)">AMAP Bio des 2 rives</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit3">
-                        <p>évenement numéro 3</p>
+                        <img src="img/Imagesdesevents/event3.png" alt="AMAP des Voiliers">
+                        <p onclick="afficherEvenement(3)">AMAP des Voiliers</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit4">
-                        <p>évenement numéro 4</p>
+                        <img src="img/Imagesdesevents/event4.png" alt="Le Pompin'Ambour">
+                        <p onclick="afficherEvenement(4)">Le Pompin'Ambour</p>
                     </li>
 
                     <li>
-                        <img src="img/logo.png" alt="produit1">
-                        <p>évenement numéro 5</p>
+                        <img src="img/Imagesdesevents/event5.png" alt="AMAP BIO'RILLAC">
+                        <p onclick="afficherEvenement(5)">AMAP BIO'RILLAC</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit2">
-                        <p>évenement numéro 6</p>
+                        <img src="img/Imagesdesevents/event6.png" alt="AMAP">
+                        <p onclick="afficherEvenement(6)">AMAP</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit3">
-                        <p>évenement numéro 7</p>
+                        <img src="img/Imagesdesevents/event7.png" alt="Pensees Bio">
+                        <p onclick="afficherEvenement(7)">Pensees Bio</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit4">
-                        <p>évenement numéro 8</p>
+                        <img src="img/Imagesdesevents/event8.png" alt="Bio & Sens Montpellier">
+                        <p onclick="afficherEvenement(8)">Bio & Sens Montpellier</p>
                     </li>
 
                     <li>
-                        <img src="img/logo.png" alt="produit1">
-                        <p>évenement numéro 9</p>
+                        <img src="img/Imagesdesevents/event9.png" alt="Biossetan">
+                        <p onclick="afficherEvenement(9)">Biossetan</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit2">
-                        <p>évenement numéro 10</p>
+                        <img src="img/Imagesdesevents/event10.png" alt="La Canopée">
+                        <p onclick="afficherEvenement(10)">La Canopée</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit3">
-                        <p>évenement numéro 11</p>
+                        <img src="img/Imagesdesevents/event11.png" alt="Naturéo">
+                        <p onclick="afficherEvenement(11)">Naturéo</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit4">
-                        <p>évenement numéro 12</p>
+                        <img src="img/Imagesdesevents/event12.png" alt="Rayons Verts">
+                        <p onclick="afficherEvenement(12)">Rayons Verts</p>
                     </li>
 
                     <li>
-                        <img src="img/logo.png" alt="produit1">
-                        <p>évenement numéro 13</p>
+                        <img src="img/Imagesdesevents/event13.png" alt="BIOMONDE">
+                        <p onclick="afficherEvenement(13)">BIOMONDE</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit2">
-                        <p>évenement numéro 14</p>
+                        <img src="img/Imagesdesevents/event14.png" alt="Bio c'Bon">
+                        <p onclick="afficherEvenement(14)">Bio c'Bon</p>
 
                     </li>
                     <li>
-                        <img src="img/logo.png" alt="produit3">
-                        <p>évenement numéro 15</p>
+                        <img src="img/Imagesdesevents/event15.png" alt="Les Comptoirs de la Bio">
+                        <p onclick="afficherEvenement(15)">Les Comptoirs de la Bio</p>
 
                     </li>
                 </ul>
@@ -458,14 +458,52 @@
 
         /*fonctions pour changer la carte des événements*/
         function afficherEvenement(event){
-            var myPBeacon = document.getElementById(event);
+            
             switch (event){
-                case 'event1':
+                case 1:
                     myIFrame.src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.0967377633283!2d0.3391366154699327!3d46.565552279129385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fdbe45d8f4987d%3A0x2d6462b5a1af018a!2sAssociation%20pour%20le%20Maintien%20d%E2%80%99une%20Agriculture%20Paysanne%20les%20Grand%E2%80%99Goules!5e0!3m2!1sfr!2sfr!4v1620645715474!5m2!1sfr!2sfr";
                     break;
-                case 'event2':
-                    console.log("event2");
+                case 2:
+                    myIFrame.src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.0881225132657!2d1.0447187154980357!3d47.33215027916741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcb6dea8165c87%3A0xde674a52bd6e19b4!2sAMAP%20Bio%20des%202%20rives!5e0!3m2!1sfr!2sfr!4v1620645796201!5m2!1sfr!2sfr";
                     break;
+                case 3:
+                    myIFrame.src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2763.029992356812!2d-1.1509391845444077!3d46.17005867911556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153aa7d0bc5d1%3A0x8fc702fd80309663!2sAmap%20des%20Voiliers!5e0!3m2!1sfr!2sfr!4v1620645827376!5m2!1sfr!2sfr";
+                    break;
+                case 4:
+                    myIFrame.src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.456913373304!2d-0.45097368459154596!3d44.852992279098466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd553001be9b4109%3A0x307d1bd23203b9b7!2sLe%20Pompin&#39;Ambour%20AMAP%20de%20Pompignac!5e0!3m2!1sfr!2sfr!4v1620645860689!5m2!1sfr!2sfr";
+                    break;
+                case 5:
+                    myIFrame.src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.06480115793!2d2.485287115410173!3d44.90167757909835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b2aa26f5aa5679%3A0xadc8bcd88a8c6512!2sAMAP%20BIO%E2%80%99RILLAC!5e0!3m2!1sfr!2sfr!4v1620645921565!5m2!1sfr!2sfr";
+                    break;
+                case 6:
+                    myIFrame.src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.429331588505!2d3.3279913999999997!3d45.9227183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f6dc7d4f2266dd%3A0xd01a86c48c7f4ab1!2sAMAP!5e0!3m2!1sfr!2sfr!4v1620645974872!5m2!1sfr!2sfr";
+                    break;
+                case 7:
+                    myIFrame.src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.922355699045!2d1.842427815411021!3d44.924914479098256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ad2a14a631bbf5%3A0xa764cfcb8f076612!2sPensees%20Bio!5e0!3m2!1sfr!2sfr!4v1620646016784!5m2!1sfr!2sfr";
+                    break;
+                case 8:
+                    myIFrame.src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.6867506330627!2d3.8038200153650883!3d43.61306347912271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6adcac259018d%3A0xb08d59930c837770!2sBio%20%26%20Sens%20Montpellier%20-%20Juvignac!5e0!3m2!1sfr!2sfr!4v1620646044724!5m2!1sfr!2sfr";
+                    break;
+                case 9:
+                    myIFrame.src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.607318716241!2d5.800108715350739!3d43.19674967913961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c908ba22314513%3A0xb271daee8459ac80!2sBiossetan!5e0!3m2!1sfr!2sfr!4v1620646082077!5m2!1sfr!2sfr";
+                    break;
+                case 10:
+                    myIFrame.src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.808557468342!2d6.032093815494646!3d47.23989047916208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d63306ea137e7%3A0x6fe5bb88ec65fbb7!2sBiocoop%20La%20Canop%C3%A9e%20Besan%C3%A7on!5e0!3m2!1sfr!2sfr!4v1620646122154!5m2!1sfr!2sfr";
+                    break;
+                case 11:
+                    myIFrame.src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.3089680851353!2d7.309553315525969!3d48.08497997921921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47916420ee5b1b8d%3A0x73c89775859eea4!2sNatur%C3%A9o%20Wintzenheim!5e0!3m2!1sfr!2sfr!4v1620646164505!5m2!1sfr!2sfr";
+                    break;
+                case 12:
+                    myIFrame.src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.89638604753!2d4.717601715589665!3d49.76920597938718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ea0e0f5efabc39%3A0x23529319605e323!2sRayons%20Verts!5e0!3m2!1sfr!2sfr!4v1620646227625!5m2!1sfr!2sfr";
+                    break;
+                case 13:
+                    myIFrame.src=""
+                    break;
+                case 14:
+                    break;
+                case 15:
+                    break;
+                    
                 default:
                     console.log("erreur dans le chargement de l'événement");
                     break;
