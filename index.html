@@ -58,7 +58,7 @@
                         <li>
                             <div>
                                 <img src="img/Imagesdeboissons/boisson1.jpg" alt="boisson1">
-                                <p>blabla</p>
+                                <p>Une union de l’acidité de l’orange, du citron et de l’ananas. Le tout adoucit par la douceur d’un sirop de fraise.</p>
                             </div>
                             
                             
@@ -67,7 +67,7 @@
                         <li>
                             <div>
                                 <img src="img/Imagesdeboissons/boisson2.jpg" alt="boisson2">
-                                <p>blabla</p>
+                                <p>Un cocktail aussi doux qu’un coucher de soleil, mélangeant la fraicheur de ses couleurs avec son affectueuse attirance sucré. </p>
                             </div>
                             
                             
@@ -76,7 +76,7 @@
                         <li>
                             <div>
                                 <img src="img/Imagesdeboissons/boisson3.jpg" alt="boisson3">
-                                <p>blublu</p>
+                                <p>Les amateurs de fruit de la passion seront comblé. Des grenadilles franchement pressé et relevé par quelques tranche de citron vert.</p>
                             </div>
                             
                             
@@ -85,7 +85,7 @@
                         <li>
                             <div>
                                 <img src="img/Imagesdeboissons/boisson4.jpg" alt="boisson4">
-                                <p>bloublou</p>
+                                <p>Inspiré d’une boisson officielle de Cuba, le Mojito, ce cocktail réalisé à partir de jus de cannes à sucre vous sera proposé avec différent fruit.</p>
                             </div>
                             
                             
@@ -97,7 +97,7 @@
                         <li>
                             <div>
                                 <img src="img/Imagesdeboissons/boisson5.jpg" alt="boisson5">
-                                <p>blabla</p>
+                                <p>Un cocktail, trois ingrédients. La simplicité à souvent bien meilleur goût! Le nectar de fraise et de pêche se mélangera afin d’adoucir juste comme il faut le citron.</p>
                             </div>
 
                         </li>
@@ -105,7 +105,7 @@
                             
                             <div>
                                 <img src="img/Imagesdeboissons/boisson6.jpg" alt="boisson6">
-                                <p>blabla</p>
+                                <p>Une Limonade alcoolisé  vous sera proposé. Nous vous donnerons en même temps l’occasion de l’arranger selon vos goût afin de savourer l’éclat du whisky.</p>
                             </div>
         
                         </li>
@@ -113,7 +113,7 @@
                             
                             <div>
                                 <img src="img/Imagesdeboissons/boisson7.jpg" alt="boisson7">
-                                <p>blabla</p>
+                                <p>Une Limonade alcoolisé  vous sera proposé. Nous vous donnerons en même temps l’occasion de l’arranger selon vos goût afin de savourer l’éclat du whisky.</p>
                             </div>
         
                         </li>
@@ -121,7 +121,7 @@
                             
                             <div>
                                 <img src="img/Imagesdeboissons/boisson8.jpg" alt="boisson8">
-                                <p>blabla</p>
+                                <p>Un vers dans lequel les rayons du soleil reflèteront la couleur des fruits et vous donnant l’impression qu’un ange pleur sur votre langue lors de votre dégustation.</p>
                             </div>
                             
                         </li>
@@ -222,7 +222,7 @@
             </div>
 
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937618!2d2.292292615555007!3d48.858370079287425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1620318568073!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937618!2d2.292292615555007!3d48.858370079287425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1620318568073!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" id="myIFrame"></iframe>
             </div>
 
             <div class="eventlist">
@@ -231,7 +231,7 @@
                 <ul id="eventlist">
                     <li>
                         <img src="img/logo.png" alt="produit1">
-                        <p>évenement numéro 1</p>
+                        <p onclick="afficherEvenement()">évenement numéro 1</p>
 
                     </li>
                     <li>
@@ -450,6 +450,28 @@
                 drinklist2.style.display = "flex";
                 indexDrinkList = 2;
             }
+        }
+
+        var myIFrame = document.getElementById("myIFrame");
+        
+
+
+        /*fonctions pour changer la carte des événements*/
+        function afficherEvenement(event){
+            var myPBeacon = document.getElementById(event);
+            switch (event){
+                case 'event1':
+                    myIFrame.src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.0967377633283!2d0.3391366154699327!3d46.565552279129385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fdbe45d8f4987d%3A0x2d6462b5a1af018a!2sAssociation%20pour%20le%20Maintien%20d%E2%80%99une%20Agriculture%20Paysanne%20les%20Grand%E2%80%99Goules!5e0!3m2!1sfr!2sfr!4v1620645715474!5m2!1sfr!2sfr";
+                    break;
+                case 'event2':
+                    console.log("event2");
+                    break;
+                default:
+                    console.log("erreur dans le chargement de l'événement");
+                    break;
+            }
+
+            
         }
         
     </script>

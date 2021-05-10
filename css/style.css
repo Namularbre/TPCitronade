@@ -295,8 +295,8 @@ body{
 
 }
 /*drink list1*/
-#drinklist1{
-	display: flex;
+#drinklist1,#drinklist2{
+	display: none;
 	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: row;
@@ -304,22 +304,24 @@ body{
 	min-height: 100px;
 	
 }
-#drinklist1>li{
+#drinklist1>li,#drinklist2>li{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
 	padding: 10px;
 }
-#drinklist1>li>div>img{
+#drinklist1>li>div>img,#drinklist2>li>div>img{
 	width: 200px;
 	height: 200px;
 
 }
-#drinklist1>li>p{
+#drinklist1>li>div>p,#drinklist2>li>div>p{
+	margin-top: 5px;
 	display: flex;
-	flex-flow: column;
+	flex-flow: row, wrap;
+	width: 200px;
 }
 @media all and (max-width: 720px){
 	#drinklist1>li>img,#drinklist2>li>img{
