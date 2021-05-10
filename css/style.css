@@ -288,15 +288,15 @@ body{
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	min-height: 100px;
+	min-height: 450px;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	border-bottom: 1px solid;
 
 }
 /*drink list1*/
-#drinklist1,#drinklist2{
-	display: none;
+#drinklist1{
+	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: row;
@@ -304,6 +304,15 @@ body{
 	min-height: 100px;
 	
 }
+#drinklist2{
+	display: none;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 100px;
+}
+
 #drinklist1>li,#drinklist2>li{
 	display: flex;
 	justify-content: space-evenly;
@@ -330,30 +339,7 @@ body{
 	}
 }
 /*drink list1*/
-/*drink list 2*/
-#drinklist2{
-	display: none;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	min-height: 100px;
-	
-}
-#drinklist2>li{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	flex-direction: row;
-	align-items: center;
-	padding: 10px;
-}
-#drinklist2>li>div>img{
-	width: 200px;
-	height: 200px;
 
-}
-/*end drink list 2*/
 /*end drink list*/
 
 
