@@ -357,7 +357,7 @@
                               </select>
                       </div>
                       <div class="button">
-                          <a class="waves-effect waves-light btn yellow" onclick="envoyerinfo()"><i class="material-icons right" >send</i>S'inscrire</a>
+                          <a class="waves-effect waves-light btn yellow" onClick="envoyerInfo()"><i class="material-icons right" >send</i>S'inscrire</a>
                       </div>
                   
                   </form>
@@ -508,8 +508,8 @@
                     
                 default:
                     console.log("erreur dans le chargement de l'événement");
-                    break;
             }
+        }
 
 
             var myTAMail = document.getElementById("mail");
@@ -517,9 +517,9 @@
             var myTAname = document.getElementById("name");
 
             /*fonction pour le bouton du formulaire*/
-            function envoyerinfo(){
+            function envoyerInfo(){
                 console.log("Je suis dans la fonction");
-                if(myTAMail.value != "" && myTAfirstname.value != "" && myTAlastname.value != ""){
+                if(myTAMail.value != "" && myTAfirstname.value != "" && myTAname.value != ""){
                     alert("Félicitation ! Vous etes inscrit");
 
                 }
@@ -527,9 +527,6 @@
                     alert("Veuilliez remplir tous le formulaire");
                 }
             }
-
-            
-        }
         
     </script>
     <!--End Script-->
